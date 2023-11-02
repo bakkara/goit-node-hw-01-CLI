@@ -9,7 +9,7 @@ program
   .option('-e, --email <type>', 'user email')
   .option('-p, --phone <type>', 'user phone');
 
-program.parse();// const program = new Command();
+program.parse();
 const options = program.opts()
 
 async function invokeAction({ action, id, name, email, phone }) {
